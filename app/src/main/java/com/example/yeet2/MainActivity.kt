@@ -14,12 +14,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun do_yeet(view: View){
-        val tv1 = findViewById(R.id.mytext) as TextView
-        tv1.text = "Hello"
+
         val intent = Intent(this, yeet_game::class.java).apply {
             //putExtra(EXTRA_MESSAGE, message)
         }
         startActivity(intent)
 
+    }
+    fun do_afk(view: View) {
+        val intent = Intent(this, afk2::class.java).apply {
+            //putExtra(EXTRA_MESSAGE, message)
+        }
+        System.out.println("start afk")
+
+        startActivity(intent)
     }
 }

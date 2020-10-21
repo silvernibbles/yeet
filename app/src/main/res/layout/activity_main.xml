@@ -1,28 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/mytext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView6"-->
+<!--        android:layout_width="406dp"-->
+<!--        android:layout_height="198dp"-->
+<!--        android:elevation="3"-->
+<!--        app:layout_constrainedHeight="false"-->
+<!--        app:layout_constrainedWidth="false"-->
+<!--        app:srcCompat="@drawable/ic_stickfigurethrowsphoneatground" -->
+<!--        />-->
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="yeet"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="210dp"
-        android:onClick="do_yeet"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="120dp">
+
+        <Button
+            android:id="@+id/yeet_button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:onClick="do_yeet"
+            android:text="yeet"
+            android:textSize="25dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_stickfigurethrowsphoneatground" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="120dp">
+
+        <Button
+            android:id="@+id/afk_button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:onClick="do_afk"
+            android:text="afk"
+
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_afk" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="120dp">
+
+        <Button
+            android:id="@+id/cake_button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:onClick="do_afk"
+            android:text="Cake?"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cake" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView3"-->
+    <!--        android:layout_width="48dp"-->
+    <!--        android:layout_height="92dp"-->
+    <!--        android:elevation="2"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:srcCompat="@drawable/ic_trophy"-->
+    <!--        tools:layout_editor_absoluteX="327dp"-->
+    <!--        tools:layout_editor_absoluteY="152dp"-->
+    <!--        tools:visibility="visible" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button2"-->
+    <!--        android:layout_width="364dp"-->
+    <!--        android:layout_height="78dp"-->
+    <!--        android:text="Cake"-->
+    <!--        tools:layout_editor_absoluteX="22dp"-->
+    <!--        tools:layout_editor_absoluteY="309dp" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView7"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="246dp"-->
+    <!--        android:elevation="2"-->
+    <!--        app:srcCompat="@drawable/ic_cake"-->
+    <!--        tools:layout_editor_absoluteX="-2dp"-->
+    <!--        tools:layout_editor_absoluteY="221dp" />-->
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
